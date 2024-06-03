@@ -3,14 +3,12 @@
 #------------------------------------------------------------------------------
 provider "aws" {
   alias   = "main"
-  region  = var.aws_region
-  profile = var.aws_profile
+  region = "us-west-2"
 }
 
 provider "aws" {
   alias   = "acm_provider"
-  region  = var.acm_region
-  profile = var.aws_profile
+  
 }
 
 #------------------------------------------------------------------------------
