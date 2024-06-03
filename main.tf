@@ -12,7 +12,7 @@ locals {
 #tfsec:ignore:aws-s3-enable-versioning
 module "s3_logs_bucket" {
   providers = {
-    aws = aws.main
+    aws = aws
   }
 
   source  = "cn-terraform/logs-s3-bucket/aws"
