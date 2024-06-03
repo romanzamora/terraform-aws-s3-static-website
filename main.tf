@@ -28,7 +28,7 @@ module "s3_logs_bucket" {
     aws = aws
   }
 
-  source  = "cn-terraform/logs-s3-bucket/aws"
+  source  = "hashicorp/aws"
   version = "1.0.6"
   # source  = "../terraform-aws-logs-s3-bucket"
 
